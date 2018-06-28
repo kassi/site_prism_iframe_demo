@@ -1,6 +1,5 @@
 (function() {
   window.addEventListener("load", function() {
-    console.log("load");
     var clickListener = function(event) {
       console.log("click");
       var divId = event.target.getAttribute("data-id");
@@ -19,11 +18,9 @@
     var ccButton = document.getElementById("credit_card_radio_button");
     var ddButton = document.getElementById("direct_debit_radio_button");
     if (ccButton) {
-      console.log("ccButton");
       ccButton.addEventListener("click", clickListener);
     };
     if (ddButton) {
-      console.log("ddButton");
       ddButton.addEventListener("click", clickListener);
     }
   });

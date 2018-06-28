@@ -1,29 +1,34 @@
-<div class="edit-layer">
-  <h4>Payment Method</h4>
+<div id="client-paydata-control">
+  <div class="payment-method-section">
+    <div class="edit-layer">
+      <h4>Payment Method</h4>
 
-  <%# Payment method selection %>
+      <%# Payment method selection %>
 
-  <div class="" id="paytype">
-    <label class="">
-      <input id="credit_card_radio_button" type="radio" name="client[paytype]" data-id="credit_card_form"
-             value="credit_card"/>
-      Credit Card
-    </label>
-    <label class="">
-      <input id="direct_debit_radio_button" type="radio" name="client[paytype]" data-id="direct_debit_form"
-             value="direct_debit"/>
-      Direct Debit
-    </label>
-  </div>
+        <div class="" id="paytype">
+          <label class="">
+            <input id="credit_card_radio_button" type="radio" name="client[paytype]" data-id="credit_card_form"
+                   value="credit_card"/>
+            Credit Card
+          </label>
+          <label class="">
+            <input id="direct_debit_radio_button" type="radio" name="client[paytype]" data-id="direct_debit_form"
+                   value="direct_debit"/>
+            Direct Debit
+          </label>
+        </div>
 
-  <%# Payment method form %>
+        <%# Payment method form %>
 
-  <div id="credit_card_form" class="payment_method_form hidden">
-    <iframe id="credit_card_data" src="<%= iframe_url %>"
-            frameBorder="0" scrolling="no" width="100%" height="450px"></iframe>
-  </div>
+        <div id="credit_card_form" class="payment_method_form hidden">
+          <iframe id="credit_card_data" src="<%= iframe_url %>"
+                  frameBorder="0" scrolling="no" width="100%" height="450px"></iframe>
+        </div>
 
-  <div id="direct_debit_form" class="payment_method_form hidden">
-    <p>Dummy Form for Direct Debit</p>
+        <div id="direct_debit_form" class="payment_method_form hidden">
+          <p>Dummy Form for Direct Debit</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
