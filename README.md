@@ -1,24 +1,21 @@
-# README
+# SitePrism iFrame Demo project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In order to investigate https://github.com/natritmeyer/site_prism/issues/274
+I set up the project as minimalistic as possible with the same environment
+(e.g. using chromedriver) and page/section structure as it is in the main app.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+As usual:
+1. clone it
+2. Run `bundle install`
 
-* System dependencies
+## Let The Test Fail
 
-* Configuration
+Running
 
-* Database creation
+```
+bundle exec rspec
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+starts the one selenium test that happily breaks with the exact same error message.
